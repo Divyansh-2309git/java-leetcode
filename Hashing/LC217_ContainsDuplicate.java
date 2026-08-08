@@ -1,30 +1,30 @@
 /*
- * Problem: LC 35 - Search Insert Position
+ * Problem: LC 217 - Contains Duplicate 
  *
- * Topic:Array 
- * Pattern:Two Pointer 
+ * Topic:Array , Hashing
+ * Pattern:Hash Set
  * Difficulty:Easy 
  *
- * Time Complexity:O(log n )
+ * Time Complexity:O(n)
  * Space Complexity:O(1)
  *
  * Approach:
- * Use Binary Search with two pointers (`left` and `right`).
- * - If `nums[mid] == target`, return `mid`.
- * - If `nums[mid] < target`, search the right half.
- * - Otherwise, search the left half.
- * - If the target is not found, `left` will point to the correct insertion index
+ * - Create a HashSet to keep track of visited elements.
+ * - Traverse the array one element at a time.
+ * - Try to add each element to the HashSet.
+ * - If adding an element returns false, it already exists in the HashSet,
+ *   meaning a duplicate has been found.
+ * - Return true immediately when a duplicate is encountered.
+ * - If the traversal completes without finding any duplicates, return false.
  *
  * Key Learning:
- * Returning `left` after the loop ends gives the correct insertion index because
- * it points to the first position where the target can be inserted while maintaining
- * the sorted order.
+ * Return after finding the value for more optimised code 
  * 
- * Date Solved: 1-08-2026
+ * Date Solved: 6-08-2026
  *
- * Confidence: ⭐⭐⭐⭐
+ * Confidence: ⭐⭐⭐⭐⭐
  * 
- * Revision: Yes
+ * Revision: No 
  */
 import java.util.*;
 
