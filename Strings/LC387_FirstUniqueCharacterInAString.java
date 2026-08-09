@@ -1,7 +1,7 @@
 /*
  * Problem: LC 387 - First Unique Character in a String
  *
- * Topic: String, Hashing
+ * Topic: Strings
  * Pattern: Frequency Count
  * Difficulty: Easy
  *
@@ -9,19 +9,14 @@
  * Space Complexity: O(1)
  *
  * Approach:
- * - Create a HashMap to count the frequency of every character.
- * - Traverse the string once and build the frequency map.
- * - Traverse the string a second time.
- * - Return the index of the first character whose frequency is 1.
- * - If no unique character exists, return -1.
+ * - First pass counts character frequencies. Second pass returns first character with count 1.
  *
  * Key Learning:
- * - Frequency counting is useful for identifying unique elements.
- * - Sometimes a second traversal is simpler and cleaner than trying
- *   to solve everything in one pass.
- * - getOrDefault() simplifies frequency counting.
+ * - Two-pass string traversal for frequency verification.
  *
  * Date Solved: 07-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

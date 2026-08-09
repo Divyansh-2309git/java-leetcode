@@ -1,35 +1,23 @@
 /*
  * Problem: LC 36 - Valid Sudoku
  *
- * Topic: Array, Hashing
- * Pattern: HashSet
+ * Topic: Hashing
+ * Pattern: HashSet Duplicate Detection
  * Difficulty: Medium
  *
  * Time Complexity: O(1)
  * Space Complexity: O(1)
  *
  * Approach:
- * - Use a HashSet to check for duplicate numbers in each row.
- * - Use another HashSet to check for duplicate numbers in each column.
- * - Traverse rows and columns simultaneously using board[i][j]
- *   and board[j][i].
- * - Clear the row and column HashSets after checking each
- *   row and column.
- * - Traverse each 3x3 box by moving the starting row and
- *   column by 3.
- * - Use a HashSet for each 3x3 box to detect duplicates.
- * - Ignore '.' because empty cells do not count.
- * - Return false if a duplicate is found.
- * - Return true if the entire board is valid.
+ * - Traverse 9x9 grid.
+ * - Track seen values in rows, columns, and 3x3 sub-boxes using encoded strings or boolean sets.
  *
  * Key Learning:
- * - HashSet is useful for detecting duplicates.
- * - board[i][j] traverses a row while board[j][i] traverses
- *   the corresponding column.
- * - 3x3 boxes can be traversed by incrementing the starting
- *   row and column by 3.
+ * - Key encoding for multi-dimensional uniqueness constraint checking.
  *
  * Date Solved: 09-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

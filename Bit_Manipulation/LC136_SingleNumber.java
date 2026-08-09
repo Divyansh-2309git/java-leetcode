@@ -1,28 +1,23 @@
 /*
  * Problem: LC 136 - Single Number
  *
- * Topic: Array, Bit Manipulation
- * Pattern: XOR
+ * Topic: Bit Manipulation
+ * Pattern: XOR Cancellation
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
  * Approach:
- * - Initialize the answer with the first element.
- * - Traverse the remaining array.
- * - XOR the current answer with each element.
- * - Duplicate numbers cancel each other out because:
- *      a ^ a = 0
- *      a ^ 0 = a
- * - The remaining value is the unique number.
+ * - XOR all elements together.
+ * - Duplicates cancel out (a ^ a = 0), leaving the single unique number (a ^ 0 = a).
  *
  * Key Learning:
- * - XOR is useful when every element appears exactly twice except one.
- * - XOR is associative and commutative, so the order doesn't matter.
- * - Bit Manipulation can often replace HashMaps and reduce space complexity.
+ * - Bitwise XOR properties for linear time and constant space uniqueness check.
  *
  * Date Solved: 07-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

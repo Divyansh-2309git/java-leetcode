@@ -1,28 +1,25 @@
 /*
  * Problem: LC 26 - Remove Duplicates from Sorted Array
  *
- * Topic: Arrays
- * Pattern: Two Pointers 
+ * Topic: Two Pointers
+ * Pattern: Read & Write Pointers
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(n)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Maintain a write pointer for the last unique element.
- * Traverse the array with a read pointer.
- * Whenever a new unique element is found, move the write pointer
- * forward and overwrite that position with the new element.
+ * - Write pointer tracks unique element index; read pointer scans array overwriting duplicate entries.
  *
  * Key Learning:
- * In a sorted array, duplicates are adjacent.
- * Comparing the current element with the last unique element
- * allows duplicates to be removed in-place.
+ * - In-place compaction using read and write pointers.
  *
- * Date Solved:31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

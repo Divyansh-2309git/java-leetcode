@@ -1,25 +1,25 @@
 /*
  * Problem: LC 344 - Reverse String
  *
- * Topic: Strings
- * Pattern: Two Pointer
+ * Topic: Two Pointers
+ * Pattern: Two Pointers (Opposite Ends)
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Initialize two pointers, one at the beginning and one at the end of the character array.
- * Swap the characters at both pointers and move them toward each other until they meet.
+ * - Swapping characters at left and right pointers while moving inward.
  *
  * Key Learning:
- * When two elements need to exchange positions symmetrically, traversing from both ends
- * and swapping in-place is an efficient solution that requires no extra space.
+ * - Symmetrical in-place character swapping.
  *
- * Date Solved:31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

@@ -2,22 +2,26 @@
  * Problem: LC 1672 - Richest Customer Wealth
  *
  * Topic: Arrays
- * Pattern:Matrix Traversal
+ * Pattern: Matrix Traversal
  * Difficulty: Easy
  *
- * Time Complexity:O(m * n )
- * Space Complexity:O(1) 
+ * Time Complexity: O(m × n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Traverse each customer's accounts using nested loops.
- * Calculate the total wealth for each customer and update the maximum wealth found.
+ * - Iterate through each customer (row) in the 2D matrix.
+ * - Compute the sum of bank accounts for each customer.
+ * - Update max wealth accordingly.
  *
- * Key Learning:Nested loops are used to traverse matrices row by row.
+ * Key Learning:
+ * - 2D array row-wise summation technique.
  *
- * Date Solved:30-7-2026
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

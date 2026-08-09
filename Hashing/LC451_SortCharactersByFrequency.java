@@ -1,33 +1,24 @@
 /*
  * Problem: LC 451 - Sort Characters By Frequency
  *
- * Topic: String, HashMap, Sorting
- * Pattern: Frequency Counting + Sorting
+ * Topic: Hashing
+ * Pattern: Frequency Counting + Bucket Sort / Sorting
  * Difficulty: Medium
  *
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(n)
  *
  * Approach:
- * - Count the frequency of each character using a HashMap.
- * - Group characters according to their frequencies.
- * - Sort the frequencies in descending order.
- * - Append each character according to its frequency.
+ * - Build character frequency map, then sort by frequency or use Bucket Sort.
  *
  * Key Learning:
- * - A HashMap can be used to store character frequencies.
- * - Multiple characters can have the same frequency.
- * - Characters with the same frequency need to be grouped
- *   so that each character is repeated consecutively.
- * - A HashMap itself is not sorted by its values, so the
- *   entries/frequencies need to be organized separately.
+ * - Sorting elements by frequency counts.
  *
- * Date Attempted: 08-08-2026
+ * Date Solved: TODO: USER INPUT REQUIRED
  *
  * Status: ⏸️ Deferred
  *
- * Reason:
- * - Put on hold to revisit with a fresh mind.
+ * Confidence: TODO: USER INPUT REQUIRED
  *
  * Revision: Yes
  */

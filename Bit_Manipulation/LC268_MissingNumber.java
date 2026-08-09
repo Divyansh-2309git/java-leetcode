@@ -1,28 +1,22 @@
 /*
  * Problem: LC 268 - Missing Number
  *
- * Topic: Array, Math
- * Pattern: Expected Sum
+ * Topic: Bit Manipulation
+ * Pattern: Expected Sum / XOR Cancellation
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(1)
  *
  * Approach:
- * - The array contains n distinct numbers from the range 0 to n,
- *   with exactly one number missing.
- * - Calculate the expected sum of all numbers from 0 to n using:
- *   n * (n + 1) / 2.
- * - Calculate the actual sum of all elements in the array.
- * - Subtract the actual sum from the expected sum.
- * - The difference is the missing number.
+ * - Compute expected sum n*(n+1)/2 and subtract actual array sum, OR XOR all indices and elements.
  *
  * Key Learning:
- * - The required range is based on nums.length, not the maximum
- *   value present in the array.
- * - Expected sum - actual sum directly gives the missing number.
+ * - Mathematical range sum or XOR bitwise property eliminates need for HashSet space.
  *
  * Date Solved: 09-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

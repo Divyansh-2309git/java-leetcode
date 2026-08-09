@@ -1,34 +1,28 @@
 /*
  * Problem: LC 242 - Valid Anagram
  *
- * Topic: String, Hashing
+ * Topic: Strings
  * Pattern: Frequency Count
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * - If the lengths of both strings are different, return false.
- * - Store the frequency of every character from the first string
- *   inside a HashMap.
- * - Traverse the second string and decrease the frequency.
- * - If a character is not present in the HashMap, return false.
- * - Remove the character once its frequency becomes zero.
- * - If all frequencies become zero, the strings are anagrams.
+ * - Count character frequencies and compare.
  *
  * Key Learning:
- * - HashMap can be used to maintain character frequencies.
- * - getOrDefault() simplifies frequency counting.
- * - Removing entries with zero frequency keeps the map clean.
- * - Checking string lengths first avoids unnecessary computation.
+ * - Fixed-size integer array int[26] frequency counting.
  *
  * Date Solved: 06-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *
  * Revision: No
  */
+
 import java.util.*;
 
 public class LC242_ValidAnagram {

@@ -1,25 +1,25 @@
 /*
  * Problem: LC 283 - Move Zeroes
  *
- * Topic: Arrays
- * Pattern:Two pointers 
+ * Topic: Two Pointers
+ * Pattern: Read & Write Pointers / Swapping
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Traverse the array using one pointer.
- * Maintain another pointer that marks the next position for a non-zero element.
- * Whenever a non-zero is found, swap it with the element at the write pointer.
+ * - Write pointer tracks zero position, swapping with non-zero elements encountered by read pointer.
  *
  * Key Learning:
- * Two pointers can be used to rearrange elements in-place while preserving order.
+ * - In-place swapping while maintaining relative order of non-zero elements.
  *
- * Date Solved:30-7-26
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

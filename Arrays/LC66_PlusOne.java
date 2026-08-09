@@ -1,31 +1,28 @@
 /*
  * Problem: LC 66 - Plus One
  *
- * Topic:Arrays
- * Pattern:Carry Propogation
+ * Topic: Arrays
+ * Pattern: Carry Propagation
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1) / O(n) (when the new array is created) 
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Traverse the array from right to left.
- * If a digit is less than 9, increment it and return.
- * Otherwise, set it to 0 and continue carrying.
- * If every digit becomes 0, create a new array of size n+1
- * with the first element as 1.
+ * - Iterate from right to left.
+ * - If digit < 9, increment and return.
+ * - Otherwise set digit to 0 and propagate carry.
+ * - If loop finishes, create new array of size n+1 with index 0 set to 1.
  *
  * Key Learning:
- * Arrays are fixed size. Create a new array only when
- * the number of digits increases.
+ * - Reverse traversal for digit carry handling.
  *
- * Date Solved:1-8-2026
+ * Date Solved: 01-08-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
- * 
- * Revision needed : No r
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
-  *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

@@ -1,25 +1,25 @@
 /*
  * Problem: LC 27 - Remove Element
  *
- * Topic: Arrays
- * Pattern: Two Pointer(Read and Write)
+ * Topic: Two Pointers
+ * Pattern: Read & Write Pointers
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity:O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Traverse the array once using a read pointer.
- * Whenever an element is not equal to the target value,
- * write it at the current write pointer and advance the write pointer.
- * Return the number of valid elements.
+ * - Read pointer traverses array; write pointer stores elements not matching target val.
  *
- * Key Learning: A write pointer can compact valid elements in-place without using swaps.
+ * Key Learning:
+ * - In-place element removal without extra array allocation.
  *
- * Date Solved: 31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

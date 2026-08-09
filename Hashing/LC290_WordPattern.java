@@ -1,31 +1,23 @@
 /*
  * Problem: LC 290 - Word Pattern
  *
- * Topic: String, Hashing
- * Pattern: Hash Map
+ * Topic: Hashing
+ * Pattern: Bijective Map Validation
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
  * Approach:
- * - Split the input string into an array of words.
- * - If the number of words doesn't match the pattern length, return false.
- * - Create two HashMaps:
- *      1. Character -> Word
- *      2. Word -> Character
- * - Traverse both the pattern and word array simultaneously.
- * - If an existing mapping conflicts in either HashMap, return false.
- * - Otherwise, insert the new mappings.
- * - If no conflicts are found, return true.
+ * - Split string into words.
+ * - Check length equality with pattern and maintain two-way mapping char <-> word.
  *
  * Key Learning:
- * - A one-to-one (bijective) relationship requires checking mappings in both directions.
- * - String comparison in Java should be done using .equals(), not == or !=.
- * - String.split(" ") converts a sentence into an array of words.
- * - Always validate input sizes before traversing multiple collections together.
+ * - Bijective word to character mapping logic.
  *
  * Date Solved: 06-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

@@ -1,30 +1,24 @@
 /*
  * Problem: LC 128 - Longest Consecutive Sequence
  *
- * Topic: Array, Hashing
- * Pattern: HashSet
+ * Topic: Hashing
+ * Pattern: HashSet Sequence Starting Point Detection
  * Difficulty: Medium
  *
- * Time Complexity: O(n) average
+ * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
  * Approach:
- * - Store all numbers in a HashSet for O(1) average lookup.
- * - Iterate through each number in the set.
- * - Check if (key - 1) exists.
- * - If it exists, key is not the beginning of a sequence, so skip it.
- * - If (key - 1) does not exist, key is the start of a sequence.
- * - Use a while loop to check for consecutive numbers using (curr + 1).
- * - Keep track of the length of the current sequence.
- * - Update maxCount with the maximum sequence length.
+ * - Add all numbers to HashSet.
+ * - Iterate through set and only check sequence starting points where num - 1 is not in set.
+ * - Count consecutive sequence length.
  *
  * Key Learning:
- * - HashSet provides fast average O(1) lookup.
- * - Only start counting from the beginning of a sequence.
- * - Avoiding repeated traversal of the same sequence allows an O(n)
- *   average-time solution.
+ * - Identifying sequence start points avoids redundant work and achieves linear time.
  *
  * Date Solved: 08-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

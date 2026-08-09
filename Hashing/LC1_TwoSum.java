@@ -1,27 +1,24 @@
 /*
  * Problem: LC 1 - Two Sum
  *
- * Topic: Array, Hashing
- * Pattern: Hash Map
+ * Topic: Hashing
+ * Pattern: HashMap Index Tracking
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
  * Approach:
- * - Create a HashMap to store previously visited numbers and their indices.
- * - Traverse the array once.
- * - For each element, calculate the complement (target - current element).
- * - If the complement already exists in the HashMap,
- *   return its index along with the current index.
- * - Otherwise, store the current element and its index.
+ * - Traverse array while maintaining a HashMap mapping value -> index.
+ * - For current element, check if target - value exists in HashMap.
+ * - If present, return indices. Otherwise store value -> index.
  *
  * Key Learning:
- * - HashMap enables constant-time lookups.
- * - Store previously visited elements instead of searching ahead.
- * - This reduces the brute-force O(n²) solution to O(n).
+ * - Trade space for time to reduce O(n²) pair lookup to O(n).
  *
  * Date Solved: 06-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

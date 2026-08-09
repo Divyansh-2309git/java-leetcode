@@ -2,28 +2,24 @@
  * Problem: LC 1920 - Build Array from Permutation
  *
  * Topic: Arrays
- * Pattern: Traversal
+ * Pattern: Array Traversal
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity: O(n) 
+ * Space Complexity: O(n)
  *
- * Approach:Approach:
- * Create a new array of the same length.
- * Traverse the input array once and assign
- * ans[i] = nums[nums[i]].
+ * Approach:
+ * - Construct a new array ans where ans[i] = nums[nums[i]].
  *
- * Recognition:
- * Use when:
- *          -Array values can be used as indices.
- *          - Need to construct another array from index mapping.
- * 
- * Key Learning:Practice using array values as indices 
+ * Key Learning:
+ * - Direct index referencing with input values.
  *
- * Date Solved:30-7-2026
- * 
- * Confidence = ⭐⭐⭐⭐⭐
-  *
+ * Date Solved: 30-07-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

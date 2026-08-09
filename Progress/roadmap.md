@@ -8,28 +8,29 @@ This roadmap outlines my current mastery level across Data Structures and Algori
 
 ### 1.1 Arrays
 - **Status:** 🟢 **Learned / Active Practice**
-- **Problems Solved (8):** LC 66, LC 121, LC 169, LC 485, LC 1295, LC 1672, LC 1920, LC 1929
-- **Key Patterns:** Running Minimum, Boyer-Moore Majority Voting, Digit Manipulation, Carry Propagation, Matrix Traversal.
-- **Concepts Learned:** Single-pass iteration, element swapping, fixed-size vs dynamic array resizing logic.
+- **Problems Solved (9):** LC 53, LC 66, LC 121, LC 169, LC 485, LC 1295, LC 1672, LC 1920, LC 1929
+- **Key Patterns:** Kadane's Algorithm, Running Minimum, Boyer-Moore Majority Voting, Digit Manipulation, Carry Propagation, Matrix Traversal.
+- **Concepts Learned:** Single-pass iteration, element swapping, fixed-size vs dynamic array resizing logic, maximum subarray sum tracking.
 - **Next Steps:** 2D Matrix rotations (LC 48), Subarray problems.
 
 ---
 
 ### 1.2 Two Pointers
 - **Status:** 🟢 **Learned / Active Practice**
-- **Problems Solved (7):** LC 26, LC 27, LC 88, LC 125, LC 167, LC 283, LC 344
-- **Key Patterns:** Read/Write Pointers (In-place compacting), Opposite-End Pointers (Palindrome / Reverse), Backward Traversal (In-place merge).
+- **Problems Solved (8):** LC 15, LC 26, LC 27, LC 88, LC 125, LC 167, LC 283, LC 344
+- **Key Patterns:** Sorting + Two Pointers (3Sum), Read/Write Pointers (In-place compacting), Opposite-End Pointers (Palindrome / Reverse / Two Sum II), Backward Traversal (In-place merge).
 - **Concepts Learned:** Avoid $O(n^2)$ nested loops by moving pointers conditionally based on sorted order or target predicates.
-- **Next Steps:** 3Sum (LC 15), Container With Most Water (LC 11).
+- **Next Steps:** Container With Most Water (LC 11), 4Sum (LC 18).
 
 ---
 
 ### 1.3 Hashing (HashMap & HashSet)
 - **Status:** 🟢 **Learned / Active Practice**
-- **Problems Solved (9):** LC 1, LC 36, LC 49, LC 128, LC 205, LC 217, LC 219, LC 290, LC 349
-- **Key Patterns:** $O(1)$ Lookup, HashSet Duplicate Detection, Bijective Map Validation (One-to-One Mapping), HashMap Index Tracking, Grouping Collections by Key.
+- **Problems Solved (8):** LC 1, LC 36, LC 49, LC 128, LC 205, LC 217, LC 219, LC 290, LC 349
+- **Key Patterns:** $O(1)$ Lookup, HashSet Duplicate Detection, Bijective Map Validation (One-to-One Mapping), HashMap Index Tracking, Grouping Collections by Key, Sudoku Encoding.
 - **Concepts Learned:** Trade space complexity for time efficiency ($O(n)$ time with $O(n)$ space).
 - **Deferred Problems Depending on Hashing:**
+  - **LC 202 - Happy Number:** Needs Cycle Detection / HashSet iteration.
   - **LC 451 - Sort Characters By Frequency:** Needs Map Value sorting / Bucket Sort.
   - **LC 347 - Top K Frequent Elements:** Needs Heap or Frequency Bucket array.
 

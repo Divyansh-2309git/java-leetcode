@@ -8,16 +8,19 @@
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
- * Approach:reate an array of size 2n and traverse it once.
- * Use i % n so that after reaching the end of the original array,
- * the index wraps around and starts again from the beginning.
+ * Approach:
+ * - Create an array of size 2n.
+ * - Copy elements of nums into ans[i] and ans[i + n].
  *
- * Key Learning: Modulo (%) can be used to cycle through an array repeatedly.
+ * Key Learning:
+ * - Array duplication and offset indexing.
  *
- * Date Solved:30-7-2026
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

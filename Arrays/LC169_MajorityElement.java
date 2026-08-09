@@ -2,27 +2,26 @@
  * Problem: LC 169 - Majority Element
  *
  * Topic: Arrays
- * Pattern:Boyer-Moore Voting Algorithm
+ * Pattern: Boyer-Moore Voting Algorithm
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Maintain a candidate and its vote count.
- * Increase the count when the same element appears.
- * Decrease it when a different element appears.
- * When the count reaches 0, choose the current element
- * as the new candidate with one vote.
+ * - Maintain a candidate element and a count.
+ * - If count becomes 0, set candidate to current element.
+ * - Increment count if current element matches candidate, else decrement.
  *
  * Key Learning:
- * Majority voting / candidate elimination.
+ * - Boyer-Moore Voting Algorithm allows finding majority element (> n/2) in O(n) time and O(1) space.
  *
- * Date Solved: 1-8-2026
+ * Date Solved: 01-08-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
-  *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

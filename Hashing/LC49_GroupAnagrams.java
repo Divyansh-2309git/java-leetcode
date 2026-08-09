@@ -1,35 +1,27 @@
 /*
  * Problem: LC 49 - Group Anagrams
  *
- * Topic: Array, String, Hashing
- * Pattern: Hash Map
+ * Topic: Hashing
+ * Pattern: HashMap Grouping
  * Difficulty: Medium
  *
  * Time Complexity: O(n × k log k)
  * Space Complexity: O(n × k)
  *
  * Approach:
- * - Create a HashMap where:
- *      Key   -> Sorted version of a string.
- *      Value -> List of all strings having the same sorted form.
- * - Traverse every string in the input array.
- * - Convert the string into a character array and sort it.
- * - Use the sorted string as the key.
- * - If the key doesn't exist, create a new list.
- * - Add the original string to the corresponding list.
- * - Return all the grouped lists from the HashMap.
+ * - For each string, sort characters to create canonical key.
+ * - Store in HashMap mapping sorted key -> list of anagrams.
  *
  * Key Learning:
- * - Different strings can map to the same key.
- * - A HashMap can store collections (List) as values.
- * - putIfAbsent() simplifies conditional insertion.
- * - map.values() provides all grouped anagrams directly.
+ * - Anagrams share identical sorted character representations as HashMap keys.
  *
  * Date Solved: 06-08-2026
  *
- * Confidence: ⭐⭐⭐⭐☆
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
- * Revision: Yes 
+ * Confidence: ⭐⭐⭐⭐
+ *
+ * Revision: Yes
  */
 
 import java.util.*;

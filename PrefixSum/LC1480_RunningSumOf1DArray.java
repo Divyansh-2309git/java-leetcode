@@ -1,23 +1,25 @@
 /*
- * Problem: LC 1480 - Running Sum of 1D Array
+ * Problem: LC 1480 - Running Sum of 1d Array
  *
- * Topic: Arrays
- * Pattern: Prefix sum 
+ * Topic: Prefix Sum
+ * Pattern: Prefix Sum Array
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity: O(n)
+ * Space Complexity: O(1)
  *
- * Approach:Traverse from index 1 onwards.
- * Each element becomes the sum of itself and the previous running sum.
+ * Approach:
+ * - Iterate array accumulating sum: nums[i] += nums[i-1].
  *
- * Key Learning:Running Sum is the simplest application of Prefix Sum.
- * Updating the array in-place reduces extra space to O(1).
+ * Key Learning:
+ * - In-place prefix sum updates.
  *
- * Date Solved:30-7-2026
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

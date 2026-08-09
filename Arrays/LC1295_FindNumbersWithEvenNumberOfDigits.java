@@ -2,22 +2,26 @@
  * Problem: LC 1295 - Find Numbers with Even Number of Digits
  *
  * Topic: Arrays
- * Pattern:Digit Manipulation 
+ * Pattern: Digit Manipulation
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity:O(1)
+ * Space Complexity: O(1)
  *
- * Approach:Traverse every number.
- * Count its digits by repeatedly dividing by 10.
- * If the digit count is even, increment the answer.
+ * Approach:
+ * - Traverse through the array.
+ * - Count the number of digits of each number using division by 10 or log10.
+ * - Increment counter if the digit count is even.
  *
- * Key Learning: Repeated division by 10 is a simple way to determine the number of digits without converting to a String.
+ * Key Learning:
+ * - Digits can be counted using logarithmic scaling or repetitive division.
  *
- * Date Solved: 30-7-2026
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

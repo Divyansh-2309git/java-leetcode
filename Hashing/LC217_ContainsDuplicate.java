@@ -1,31 +1,29 @@
 /*
- * Problem: LC 217 - Contains Duplicate 
+ * Problem: LC 217 - Contains Duplicate
  *
- * Topic:Array , Hashing
- * Pattern:Hash Set
- * Difficulty:Easy 
+ * Topic: Hashing
+ * Pattern: HashSet Duplicate Detection
+ * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(n)
  *
  * Approach:
- * - Create a HashSet to keep track of visited elements.
- * - Traverse the array one element at a time.
- * - Try to add each element to the HashSet.
- * - If adding an element returns false, it already exists in the HashSet,
- *   meaning a duplicate has been found.
- * - Return true immediately when a duplicate is encountered.
- * - If the traversal completes without finding any duplicates, return false.
+ * - Iterate through array and insert into HashSet.
+ * - Return true if element is already in set.
  *
  * Key Learning:
- * Return after finding the value for more optimised code 
- * 
- * Date Solved: 6-08-2026
+ * - HashSet provides O(1) average lookup for duplicate detection.
+ *
+ * Date Solved: 06-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
- * 
- * Revision: No 
+ *
+ * Revision: No
  */
+
 import java.util.*;
 
 public class LC217_ContainsDuplicate{

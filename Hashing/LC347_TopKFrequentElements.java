@@ -5,18 +5,20 @@
  * Pattern: Frequency Counting + Bucket Sort / Heap
  * Difficulty: Medium
  *
- * Time Complexity: N/A
- * Space Complexity: N/A
+ * Time Complexity: O(n) with Bucket Sort / O(n log k) with Heap
+ * Space Complexity: O(n)
  *
  * Approach:
- * - Unsolved / stub implementation.
+ * - Build frequency map, then use Bucket Sort or PriorityQueue to retrieve top k elements.
  *
  * Key Learning:
- * - Requires frequency counting and selecting top K elements.
+ * - Frequency grouping with Bucket Sort or Heap.
  *
- * Date Attempted: N/A
+ * Date Solved: TODO: USER INPUT REQUIRED
  *
- * Status: ❌ Not Solved
+ * Status: ⏸️ Deferred
+ *
+ * Confidence: TODO: USER INPUT REQUIRED
  *
  * Revision: Yes
  */

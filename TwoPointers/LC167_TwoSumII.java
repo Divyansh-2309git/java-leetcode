@@ -1,28 +1,25 @@
 /*
  * Problem: LC 167 - Two Sum II - Input Array Is Sorted
  *
- * Topic:Arrays
- * Pattern:Two Pointers
+ * Topic: Two Pointers
+ * Pattern: Two Pointers (Opposite Ends)
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Place one pointer at the beginning and one at the end of the sorted array.
- * Compare their sum with the target.
- * If the sum is too large, move the right pointer left.
- * If the sum is too small, move the left pointer right.
- * Continue until the target sum is found
+ * - Opposite end pointers moving inward based on sum comparison with target.
  *
  * Key Learning:
- * A sorted array allows eliminating impossible candidates by moving
- * one pointer at a time instead of checking every pair.
+ * - Two pointers on sorted array.
  *
- * Date Solved:31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

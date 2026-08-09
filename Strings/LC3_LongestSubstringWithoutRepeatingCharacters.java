@@ -1,36 +1,26 @@
-
 /*
  * Problem: LC 3 - Longest Substring Without Repeating Characters
  *
- * Topic: String, HashSet
+ * Topic: Strings
  * Pattern: Sliding Window
  * Difficulty: Medium
  *
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(n)
+ * Space Complexity: O(min(m, n))
  *
  * Approach:
- * - Attempted using a HashSet and a current substring.
- * - Realized that clearing the entire set when a duplicate is found
- *   loses part of the valid substring.
- * - Learned that the correct approach uses a Sliding Window with
- *   left and right pointers.
- * - Deferred the problem because Sliding Window has not been learned yet.
+ * - Sliding window with left and right pointers using HashSet/HashMap to track window characters.
  *
  * Key Learning:
- * - A duplicate does not mean the entire current window is invalid.
- * - The window should be shrunk from the left until the duplicate
- *   is removed.
- * - HashSet can be used to track characters currently inside the window.
+ * - Sliding window dynamic expansion and contraction.
  *
- * Date Attempted: 09-08-2026
+ * Date Solved: TODO: USER INPUT REQUIRED
  *
  * Status: ⏸️ Deferred
  *
- * Reason:
- * - Sliding Window pattern has not been learned yet.
+ * Confidence: TODO: USER INPUT REQUIRED
  *
- * Revision: Yes - after learning Sliding Window
+ * Revision: Yes
  */
 
 import java.util.HashSet;

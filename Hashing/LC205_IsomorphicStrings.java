@@ -1,32 +1,24 @@
 /*
  * Problem: LC 205 - Isomorphic Strings
  *
- * Topic: String, Hashing
- * Pattern: Hash Map
+ * Topic: Hashing
+ * Pattern: Bijective Map Validation
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
  * Approach:
- * - Create two HashMaps:
- *      1. s -> t mapping
- *      2. t -> s mapping
- * - Traverse both strings simultaneously.
- * - If a mapping already exists, verify that it matches the current character.
- * - If either mapping is inconsistent, return false.
- * - Otherwise, store the new mappings.
- * - If the traversal completes without conflicts, return true.
+ * - Maintain two HashMaps or character arrays to ensure one-to-one character mapping in both directions.
  *
  * Key Learning:
- * - Some problems require a one-to-one (bijective) mapping.
- * - A single HashMap only guarantees one-directional mapping.
- * - Using two HashMaps ensures both forward and reverse mappings remain consistent.
- * - Verify mappings while inserting instead of checking afterward.
+ * - Bijective mapping requires validating mapping from s -> t AND t -> s.
  *
  * Date Solved: 06-08-2026
  *
- * Confidence: ⭐⭐⭐⭐☆
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐
  *
  * Revision: Yes
  */

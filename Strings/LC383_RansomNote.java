@@ -1,29 +1,22 @@
 /*
  * Problem: LC 383 - Ransom Note
  *
- * Topic: String, Hashing
+ * Topic: Strings
  * Pattern: Frequency Count
  * Difficulty: Easy
  *
  * Time Complexity: O(n + m)
- * Space Complexity: O(k)
+ * Space Complexity: O(1)
  *
  * Approach:
- * - Create a HashMap to store the frequency of every character in the magazine.
- * - Traverse the magazine and count each character.
- * - Traverse the ransom note one character at a time.
- * - If the required character is unavailable, return false.
- * - Otherwise, decrease its frequency.
- * - Remove the character from the HashMap when its frequency becomes zero.
- * - If all characters are successfully consumed, return true.
+ * - Count available letters from magazine and decrement when consuming for ransom note.
  *
  * Key Learning:
- * - One frequency map is sufficient when consuming available characters.
- * - getOrDefault() simplifies frequency counting.
- * - A HashMap can act as an inventory by decreasing counts as elements are used.
- * - Avoid modifying a HashMap while iterating over its keySet().
+ * - Character inventory tracking using frequency maps.
  *
  * Date Solved: 06-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

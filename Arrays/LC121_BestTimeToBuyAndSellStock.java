@@ -1,28 +1,27 @@
 /*
  * Problem: LC 121 - Best Time to Buy and Sell Stock
  *
- * Topic:Arrays
- * Pattern:Running Minimum
+ * Topic: Arrays
+ * Pattern: Running Minimum
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Keep track of the minimum stock price seen so far.
- * At every day, calculate the profit if sold today.
- * Update the maximum profit and minimum price.
- *
+ * - Keep track of the minimum stock price seen so far.
+ * - At every day, calculate the profit if sold today.
+ * - Update the maximum profit and minimum price.
  *
  * Key Learning:
- * Maintain a running minimum while traversing the array.
+ * - Maintain a running minimum while traversing the array.
  *
- * Date Solved: 1-8-2026
+ * Date Solved: 01-08-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
- * 
- * Revesion needed : Yes
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

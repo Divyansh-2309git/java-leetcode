@@ -1,31 +1,25 @@
 /*
  * Problem: LC 125 - Valid Palindrome
  *
- * Topic: Strings
+ * Topic: Two Pointers
  * Pattern: Two Pointers (Opposite Ends)
  * Difficulty: Easy
  *
- * Time Complexity:O(n)
- * Space Complexity:O(1)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Use two pointers starting from both ends of the string.
- * Skip non-alphanumeric characters.
- * Compare lowercase versions of valid characters.
- * If a mismatch is found, return false.
- * Otherwise continue until the pointers meet.
- *
+ * - Two pointers from both ends, skipping non-alphanumeric characters and comparing lowercase values.
  *
  * Key Learning:
- * Two pointers can process strings in-place while skipping
- * unwanted characters, avoiding the need to build a new string.
+ * - In-place string traversal skipping invalid characters.
  *
- * Date Solved:31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
- * 
- * Revesion Needed : No 
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

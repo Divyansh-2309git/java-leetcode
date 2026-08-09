@@ -1,32 +1,23 @@
 /*
  * Problem: LC 219 - Contains Duplicate II
  *
- * Topic: Array, HashMap
- * Pattern: HashMap + Index Tracking
+ * Topic: Hashing
+ * Pattern: HashMap Index Tracking
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  *
  * Approach:
- * - Use a HashMap to store each number and its most recent index.
- * - Iterate through the array.
- * - If the current number already exists in the map,
- *   get its previous index.
- * - Check whether the distance between the current index
- *   and previous index is less than or equal to k.
- * - If it is, return true.
- * - Otherwise, update the number's index to the current index.
- * - If no valid pair is found, return false.
+ * - Maintain HashMap of value -> last index.
+ * - If current index - previous index <= k, return true.
  *
  * Key Learning:
- * - HashMap can be used to remember the most recent position
- *   of an element.
- * - For duplicate-distance problems, storing indices is useful.
- * - Updating the index each time ensures we compare against
- *   the closest previous occurrence.
+ * - HashMap index tracking for proximity checks.
  *
  * Date Solved: 09-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

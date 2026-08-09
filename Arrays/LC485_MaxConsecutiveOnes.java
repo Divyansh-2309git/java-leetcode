@@ -2,24 +2,25 @@
  * Problem: LC 485 - Max Consecutive Ones
  *
  * Topic: Arrays
- * Pattern: Running count 
+ * Pattern: Running Count
  * Difficulty: Easy
  *
  * Time Complexity: O(n)
- * Space Complexity:O(1)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Traverse the array once.
- * Increase the current streak when a 1 is found.
- * Reset the streak when a 0 is found.
- * Keep track of the maximum streak encountered.
+ * - Track current consecutive 1s count and maximum consecutive 1s count seen so far.
+ * - Reset current count when a 0 is encountered.
  *
  * Key Learning:
+ * - Resetting running count on state change.
  *
- * Date Solved:30-7-2026
+ * Date Solved: 30-07-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
-  *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

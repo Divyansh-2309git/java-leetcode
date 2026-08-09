@@ -1,28 +1,23 @@
 /*
  * Problem: LC 349 - Intersection of Two Arrays
  *
- * Topic: Array, HashSet
- * Pattern: HashSet
+ * Topic: Hashing
+ * Pattern: HashSet Intersection
  * Difficulty: Easy
  *
  * Time Complexity: O(n + m)
  * Space Complexity: O(n + m)
  *
  * Approach:
- * - Store all elements of nums1 in a HashSet.
- * - Store all elements of nums2 in another HashSet.
- * - Iterate through the first set.
- * - If an element also exists in the second set,
- *   add it to the answer set.
- * - Convert the answer set into an int array.
- * - Return the resulting array.
+ * - Insert first array elements into set1.
+ * - Filter elements of second array into result set if present in set1.
  *
  * Key Learning:
- * - HashSet automatically removes duplicates.
- * - HashSet.contains() provides efficient membership checking.
- * - A HashSet can be used to find the intersection of two arrays.
+ * - HashSet set operations for unique intersection.
  *
  * Date Solved: 09-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐⭐
  *

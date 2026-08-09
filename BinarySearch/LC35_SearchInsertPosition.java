@@ -1,33 +1,30 @@
-
-
 /*
  * Problem: LC 35 - Search Insert Position
  *
- * Topic:Array 
- * Pattern:Two Pointer 
- * Difficulty:Easy 
+ * Topic: Binary Search
+ * Pattern: Binary Search Boundary Property
+ * Difficulty: Easy
  *
- * Time Complexity:O(log n )
- * Space Complexity:O(1)
+ * Time Complexity: O(log n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Use Binary Search with two pointers (`left` and `right`).
- * - If `nums[mid] == target`, return `mid`.
- * - If `nums[mid] < target`, search the right half.
- * - Otherwise, search the left half.
- * - If the target is not found, `left` will point to the correct insertion index
+ * - Standard binary search with low and high pointers.
+ * - If target is found, return index.
+ * - Otherwise, return low pointer position which represents insertion index.
  *
  * Key Learning:
- * Returning `left` after the loop ends gives the correct insertion index because
- * it points to the first position where the target can be inserted while maintaining
- * the sorted order.
- * 
- * Date Solved: 1-08-2026
+ * - When target is not found in binary search, the low pointer lands on the exact insertion index.
+ *
+ * Date Solved: 01-08-2026
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
  * Confidence: ⭐⭐⭐⭐
- * 
+ *
  * Revision: Yes
  */
+
 public class LC35_SearchInsertPosition {
 
     public int searchInsert(int[] nums, int target) {

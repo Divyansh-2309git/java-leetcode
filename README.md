@@ -17,10 +17,10 @@ Welcome to my Data Structures and Algorithms (DSA) and LeetCode repository in Ja
 
 | Metric | Count | Details |
 |---|---|---|
-| **Total Problems Tracked** | **35** | Complete repository inventory |
-| **✅ Solved** | **32** | Verified implementations with full commentary |
-| **⏸️ Deferred** | **2** | Paused pending upcoming topics (Sliding Window, Sorting Map Values) |
-| **❌ Not Solved** | **1** | Stubbed for future implementation |
+| **Total Problems Tracked** | **38** | Complete repository inventory |
+| **✅ Solved** | **33** | 1 Solved Independently (LC 53), 1 Solved With Assistance (LC 15), 31 Solved (User input required for Independent vs Assisted classification) |
+| **⏸️ Deferred** | **4** | Paused pending upcoming topics (LC 3, LC 202, LC 347, LC 451) |
+| **🔁 Flagged for Revision** | **6** | Flagged for review (LC 15, LC 35, LC 49, LC 88, LC 205, LC 202/347/451) |
 
 ---
 
@@ -28,38 +28,46 @@ Welcome to my Data Structures and Algorithms (DSA) and LeetCode repository in Ja
 
 | Topic | Problems Solved | Deferred | Total Tracked | Status | Primary Patterns Covered |
 |---|---|---|---|---|---|
-| [**Arrays**](Arrays/) | 8 | 0 | 8 | In Progress | Running Minimum, Boyer-Moore Voting, Digit Manipulation, Carry Propagation, Matrix Traversal |
-| [**Two Pointers**](TwoPointers/) | 7 | 0 | 7 | In Progress | Read/Write Pointers, Opposite Ends, Backward Traversal, In-place Swapping |
-| [**Hashing**](Hashing/) | 9 | 1 | 11 | In Progress | Hash Map Index Tracking, Hash Set Sequence, Bijective Mapping, Anagram Grouping |
+| [**Arrays**](Arrays/) | 9 | 0 | 9 | In Progress | Kadane's Algorithm, Running Minimum, Boyer-Moore Voting, Digit Manipulation, Carry Propagation, Matrix Traversal |
+| [**Two Pointers**](TwoPointers/) | 8 | 0 | 8 | In Progress | Sorting + Two Pointers, Read/Write Pointers, Opposite Ends, Backward Traversal, In-place Swapping |
+| [**Hashing**](Hashing/) | 8 | 3 | 11 | In Progress | Hash Map Index Tracking, Hash Set Sequence, Bijective Mapping, Anagram Grouping, Sudoku Duplicate Detection |
 | [**Strings**](Strings/) | 3 | 1 | 4 | In Progress | Frequency Count Inventory, Character Traversal |
 | [**Prefix Sum**](PrefixSum/) | 2 | 0 | 2 | In Progress | Prefix Array, Suffix & Prefix Product Preprocessing |
 | [**Bit Manipulation**](Bit_Manipulation/) | 2 | 0 | 2 | In Progress | XOR Cancellation, Expected Sum |
 | [**Binary Search**](BinarySearch/) | 1 | 0 | 1 | In Progress | Left/Right Pointer Shrinking, Insertion Index Property |
 
-*Note: All counts are derived directly from verified source files in the repository.*
-
 ---
 
 ## ⏸️ Deferred & Pending Problems
 
-| Problem | Difficulty | Primary Pattern | Topic | Status & Reason |
-|---|---|---|---|---|
-| **LC 3 - Longest Substring Without Repeating Characters** | Medium | Sliding Window | Strings | ⏸️ **Deferred** — Requires Sliding Window pattern (not yet learned). |
-| **LC 451 - Sort Characters By Frequency** | Medium | Frequency Counting + Sorting | Hashing | ⏸️ **Deferred** — On hold to revisit after mastering Map sorting / Bucket Sort. |
-| **LC 347 - Top K Frequent Elements** | Medium | Bucket Sort / Heap | Hashing | ❌ **Not Solved** — Stubbed, pending Heap / Bucket Sort learning. |
+| # | Problem | Difficulty | Primary Pattern | Topic | Reason |
+|---|---|---|---|---|---|
+| **3** | **LC 3 - Longest Substring Without Repeating Characters** | Medium | Sliding Window | Strings | ⏸️ **Deferred** — Requires Sliding Window pattern (not yet learned). |
+| **202** | **LC 202 - Happy Number** | Easy | Cycle Detection | Hashing | ⏸️ **Deferred** — Deferred to revisit cycle detection / HashSet logic. |
+| **347** | **LC 347 - Top K Frequent Elements** | Medium | Bucket Sort / Heap | Hashing | ⏸️ **Deferred** — Deferred pending Heap / Bucket Sort learning. |
+| **451** | **LC 451 - Sort Characters By Frequency** | Medium | Frequency Counting + Sorting | Hashing | ⏸️ **Deferred** — Deferred to revisit Map sorting / Bucket Sort. |
+
+---
+
+## ❓ Needs User Input
+
+The following items require personal user input:
+1. **Independent vs Assisted Status:** 31 solved problems (all solved except LC 53 [Independently] and LC 15 [With Assistance]) need user confirmation to classify as "Solved Independently" or "Solved With Assistance".
+2. **Deferred Notes & Personal Metrics:** Dates, confidence, and revision flags for LC 202, LC 347, and LC 451.
 
 ---
 
 ## 🗺️ Repository Structure
 
 ```
-DSA/
-├── README.md                              # Root repository documentation
+LeetCode/
+├── AGENTS.md                               # AI agent guidelines & workflow rules
+├── README.md                              # Main progress dashboard
 ├── Progress/
 │   ├── progress.md                        # Chronological log of all problems
 │   └── roadmap.md                         # Topic mastery & upcoming learning plan
 │
-├── Arrays/                                # Array traversal, voting, digit manipulation
+├── Arrays/                                # Array traversal, voting, Kadane's, digit manipulation
 ├── BinarySearch/                          # Binary search algorithms
 ├── Bit_Manipulation/                      # Bitwise XOR & expected sum
 ├── Hashing/                               # HashMap & HashSet pattern solutions
@@ -92,6 +100,7 @@ Each solution file includes a standard header block containing metadata, complex
  * - ...
  *
  * Date Solved: <date>
+ * Status: <status>
  * Confidence: ⭐⭐⭐⭐⭐
  * Revision: No
  */

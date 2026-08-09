@@ -1,31 +1,25 @@
 /*
  * Problem: LC 238 - Product of Array Except Self
  *
- * Topic:Array
- * Pattern:Suffix & Prefix Products
+ * Topic: Prefix Sum
+ * Pattern: Suffix & Prefix Products
  * Difficulty: Medium
  *
- * Time Complexity:O(n)
- * Space Complexity:O(n)
+ * Time Complexity: O(n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Build a prefix product array where each index stores the
- * product of all elements to its left.
+ * - Calculate prefix products in output array, then multiply with running suffix product in second pass.
  *
- * Build a suffix product array where each index stores the
- * product of all elements to its right.
- * 
- *  Multiply the corresponding prefix and suffix products
- * to get the answer for each index.
- * 
  * Key Learning:
- * Prefix and suffix preprocessing.
+ * - Prefix and suffix cumulative product computation without division.
  *
- * Date Solved:1-8-2026
+ * Date Solved: 01-08-2026
  *
- * Confidence:⭐⭐⭐⭐⭐
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
  *
-  *
+ * Confidence: ⭐⭐⭐⭐⭐
+ *
  * Revision: No
  */
 

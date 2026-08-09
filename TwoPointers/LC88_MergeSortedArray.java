@@ -1,31 +1,28 @@
 /*
  * Problem: LC 88 - Merge Sorted Array
  *
- * Topic: Arrays
- * Pattern:Two Pointers (Backward Trevarsal)
+ * Topic: Two Pointers
+ * Pattern: Backward Traversal Pointers
  * Difficulty: Easy
  *
- * Time Complexity:O(m + n )
- * Space Complexity:O(n)
+ * Time Complexity: O(m + n)
+ * Space Complexity: O(1)
  *
  * Approach:
- * Use three pointers:
- * - left = m - 1
- * - right = n - 1
- * - write = m + n - 1
- * 
- * Only copy remaining elements from nums2.
- * If nums1 has remaining elements, they are already in the correct position.
+ * - Compare elements from back of both arrays and write to end of nums1 to prevent overwriting.
  *
  * Key Learning:
- * Merge from the back to avoid overwriting unprocessed elements.
+ * - Backward merging to avoid buffer allocation or array shifting.
  *
- * Date Solved:31-7-2026
+ * Date Solved: 31-07-2026
  *
- * Confidence:⭐⭐⭐⭐
- * 
- * Revision : Needed    
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: ⭐⭐⭐⭐
+ *
+ * Revision: Yes
  */
+
 import java.util.Arrays;
 
 public class LC88_MergeSortedArray {
