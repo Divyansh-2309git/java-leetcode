@@ -1,3 +1,6 @@
+
+import java.util.HashSet;
+
 /*
  * Problem: LC 3 - Longest Substring Without Repeating Characters
  *
@@ -14,46 +17,36 @@
  * Key Learning:
  * - Sliding window dynamic expansion and contraction.
  *
- * Date Solved: TODO: USER INPUT REQUIRED
+ * Date Solved: TODO: 10 - 8 - 2026 
  *
- * Status: ⏸️ Deferred
+ * Status: Solved (Defered before )
  *
  * Confidence: TODO: USER INPUT REQUIRED
  *
  * Revision: Yes
  */
 
-import java.util.HashSet;
-
-
-
-
 public class LC3_LongestSubstringWithoutRepeatingCharacters {
 
     static class Solution {
         public int lengthOfLongestSubstring(String s) {
-            HashSet<Character> set = new HashSet<>() ; 
-            String curr = "" ; 
-            String maxString = "" ; 
-            int left = 0;
+            int left = 0 ; 
+            int maxCount = 0 ; 
+            HashSet<Character> set = new HashSet<>(); 
             for(int i = 0 ; i < s.length() ; i ++){
-                char ch = s.charAt(i) ; 
-                
-                while(set.contains(s.charAt(i))){
+                char val = s.charAt(i) ; 
+                if(set.contains(val)){
+                    while(s.charAt(left) != val){
+                        set.remove(s.charAt(left)) ; 
+                        left ++ ; 
+                    }
                     set.remove(s.charAt(left)) ; 
                     left ++ ; 
                 }
-                
-                curr += String.valueOf(ch) ; 
-                set.add(ch) ; 
-                
-                if(curr.length() > maxString.length()){
-                    maxString = curr ; 
-                }
-
+                set.add(s.charAt(i)) ; 
+                maxCount = Math.max(maxCount , set.size());                 
             }
-            
-            return maxString.length();
+            return maxCount;
         }
     }
 
@@ -62,23 +55,28 @@ public class LC3_LongestSubstringWithoutRepeatingCharacters {
         Solution solution = new Solution();
 
         // Test Case 1
-        System.out.println(
-                solution.lengthOfLongestSubstring("abcabcbb")
-        ); // 3
+        String s1 = "abcabcbb";
+        System.out.println(solution.lengthOfLongestSubstring(s1));
+        // Expected: 3
 
         // Test Case 2
-        System.out.println(
-                solution.lengthOfLongestSubstring("bbbbb")
-        ); // 1
+        String s2 = "bbbbb";
+        System.out.println(solution.lengthOfLongestSubstring(s2));
+        // Expected: 1
 
         // Test Case 3
-        System.out.println(
-                solution.lengthOfLongestSubstring("pwwkew")
-        ); // 3
+        String s3 = "pwwkew";
+        System.out.println(solution.lengthOfLongestSubstring(s3));
+        // Expected: 3
 
         // Test Case 4
-        System.out.println(
-                solution.lengthOfLongestSubstring("")
-        ); // 0
+        String s4 = "";
+        System.out.println(solution.lengthOfLongestSubstring(s4));
+        // Expected: 0
+
+        // Test Case 5
+        String s5 = "abcdef";
+        System.out.println(solution.lengthOfLongestSubstring(s5));
+        // Expected: 6
     }
 }
