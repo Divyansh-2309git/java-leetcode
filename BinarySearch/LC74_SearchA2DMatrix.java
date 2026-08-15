@@ -78,3 +78,4 @@ public class LC74_SearchA2DMatrix {
         System.out.println(solution.searchMatrix(matrix, 25));
         // false
     }
+}

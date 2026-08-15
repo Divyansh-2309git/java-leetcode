@@ -1,3 +1,32 @@
+/*
+ * Problem: LC 34 - Find First and Last Position of Element in Sorted Array
+ *
+ * Topic: Binary Search
+ * Pattern: Binary Search Boundary / First and Last Occurrence
+ * Difficulty: Medium
+ *
+ * Time Complexity: O(log n)
+ * Space Complexity: O(1)
+ *
+ * Approach:
+ * - Perform binary search twice on the sorted array.
+ * - First pass searches for the leftmost (first) occurrence: when nums[mid] == target, record index and continue searching left (right = mid - 1).
+ * - Second pass searches for the rightmost (last) occurrence: when nums[mid] == target, record index and continue searching right (left = mid + 1).
+ * - Return [first, last], or [-1, -1] if target is not found.
+ *
+ * Key Learning:
+ * - Binary search can be adapted to find first or last occurrence by continuing search into adjacent boundary half upon matching.
+ * - Two independent O(log n) passes maintain O(log n) total runtime and O(1) extra space.
+ *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: TODO: USER INPUT REQUIRED
+ *
+ * Revision: TODO: USER INPUT REQUIRED
+ */
+
 import java.util.*;
 
 public class LC34_FindFirstAndLastPositionOfElementInSortedArray {
