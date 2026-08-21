@@ -1,3 +1,33 @@
+/*
+ * Problem: LC 16 - 3Sum Closest
+ *
+ * Topic: Two Pointers
+ * Pattern: Sorting + Two Pointers
+ * Difficulty: Medium
+ *
+ * Time Complexity: O(n²)
+ * Space Complexity: O(1)
+ *
+ * Approach:
+ * - Sort the input array.
+ * - Iterate with index i, and place two pointers left = i + 1 and right = n - 1.
+ * - Compute current three-sum and calculate its absolute difference from target.
+ * - If current difference is smaller than minimum difference seen so far, update closest sum.
+ * - If sum equals target, return immediately.
+ * - If sum > target, decrement right; otherwise increment left.
+ *
+ * Key Learning:
+ * - Sorting enables two-pointer convergence to efficiently find the closest sum in O(n²) time.
+ *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: TODO: USER INPUT REQUIRED
+ *
+ * Revision: TODO: USER INPUT REQUIRED
+ */
+
 import java.util.*;
 
 public class LC16_3SumClosest {

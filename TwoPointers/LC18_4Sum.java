@@ -1,3 +1,33 @@
+/*
+ * Problem: LC 18 - 4Sum
+ *
+ * Topic: Two Pointers
+ * Pattern: Sorting + Two Pointers
+ * Difficulty: Medium
+ *
+ * Time Complexity: O(n³)
+ * Space Complexity: O(1) auxiliary
+ *
+ * Approach:
+ * - Sort the input array.
+ * - Use two nested loops with pointers i and j to fix the first two numbers, skipping duplicates.
+ * - Use two pointers left = j + 1 and right = n - 1 to find the remaining pair such that the sum equals target.
+ * - Use long to accumulate sum to prevent 32-bit integer overflow.
+ * - When a valid quadruplet is found, skip duplicate elements on both pointers.
+ *
+ * Key Learning:
+ * - Extension of 3Sum with an additional outer loop; nested loops + two pointers generalizes k-Sum problems.
+ * - Use 64-bit integers (long) when calculating sums of multiple 32-bit integers to prevent overflow.
+ *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: TODO: USER INPUT REQUIRED
+ *
+ * Revision: TODO: USER INPUT REQUIRED
+ */
+
 import java.util.*;
 
 public class LC18_4Sum {

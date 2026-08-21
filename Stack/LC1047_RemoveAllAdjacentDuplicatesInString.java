@@ -20,6 +20,8 @@
  * - When two adjacent characters become equal, they can be
  *   removed immediately.
  *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
  * Status: Solved Independently
  *
  * Confidence: ⭐⭐⭐⭐⭐

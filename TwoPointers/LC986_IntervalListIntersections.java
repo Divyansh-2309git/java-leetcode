@@ -1,3 +1,32 @@
+/*
+ * Problem: LC 986 - Interval List Intersections
+ *
+ * Topic: Two Pointers
+ * Pattern: Two Pointers / Intervals Intersection
+ * Difficulty: Medium
+ *
+ * Time Complexity: O(n + m)
+ * Space Complexity: O(1) auxiliary
+ *
+ * Approach:
+ * - Use two pointers i and j initialized at index 0 of firstList and secondList.
+ * - Find overlap start as Math.max(firstList[i][0], secondList[j][0]) and overlap end as Math.min(firstList[i][1], secondList[j][1]).
+ * - If start <= end, a valid intersection exists; add [start, end] to result list.
+ * - Move the pointer whose interval ends earlier (firstList[i][1] < secondList[j][1] ? i++ : j++).
+ *
+ * Key Learning:
+ * - Overlap between two intervals is determined by [max(start1, start2), min(end1, end2)].
+ * - Incrementing the pointer with the earlier endpoint safely discards that interval without missing intersections.
+ *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
+ * Status: TODO: USER INPUT REQUIRED (Solved - Independent vs Assisted status needed)
+ *
+ * Confidence: TODO: USER INPUT REQUIRED
+ *
+ * Revision: TODO: USER INPUT REQUIRED
+ */
+
 import java.util.*;
 
 public class LC986_IntervalListIntersections {

@@ -19,6 +19,8 @@
  * - A stack naturally models backspace behavior because the
  *   most recently added character is removed first.
  *
+ * Date Solved: TODO: USER INPUT REQUIRED
+ *
  * Status: Solved Independently
  *
  * Confidence: ⭐⭐⭐⭐⭐

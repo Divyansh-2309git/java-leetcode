@@ -5,6 +5,9 @@
  * Pattern: Fixed-Size Sliding Window + HashSet
  * Difficulty: Medium
  *
+ * Time Complexity: O(n)
+ * Space Complexity: O(k)
+ *
  * Approach:
  * - Maintain a fixed-size sliding window of length k.
  * - Use a HashSet to ensure all elements in the window are distinct.
@@ -20,9 +23,6 @@
  *   the outgoing element.
  * - Use long for sums when the possible result can exceed int range.
  *
- * Time Complexity: O(n)
- * Space Complexity: O(k)
- *
  * Date Solved: 15-08-2026
  *
  * Status: Solved Independently
@@ -33,34 +33,6 @@
  */
 
 import java.util.HashSet;
-
-
-/*
- * Problem: LC 2461 - Maximum Sum of Distinct Subarrays With Length K
- *
- * Topic: Arrays
- * Pattern: Fixed-Size Sliding Window + HashSet / Frequency Map
- * Difficulty: Medium
- *
- * Time Complexity: O(n)
- * Space Complexity: O(k)
- *
- * Approach:
- * - Maintain a sliding window of fixed size k.
- * - Track distinct elements inside the window using a HashSet / Frequency map.
- * - Ensure all k elements are distinct before updating the maximum sum.
- *
- * Key Learning:
- * - Window uniqueness validation combined with fixed-size sliding window.
- *
- * Date Solved: TODO: USER INPUT REQUIRED
- *
- * Status: In Progress
- *
- * Confidence: TODO: USER INPUT REQUIRED
- *
- * Revision: TODO: USER INPUT REQUIRED
- */
 
 public class LC2461_MaximumSumOfDistinctSubarraysWithLengthK {
 
